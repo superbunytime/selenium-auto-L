@@ -26,7 +26,7 @@ intents = discord.Intents.all()
 client = discord.Client(intents = intents)
 
 utc = datetime.timezone.utc
-time = datetime.time(hour=20, minute=rand_sleep(0, 5), tzinfo=utc) # *should* be noon +/- 5 minutes
+time = datetime.time(hour=6, minute=15, tzinfo=utc) # *should* be noon +/- 5 minutes. is no longer that.
 
 used = open('usedlinks.json', encoding='utf-8')
 used_data = json.load(used)
